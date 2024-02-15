@@ -12,8 +12,6 @@ final class AuthorizationViewController: UIViewController {
     @IBOutlet var userNameTF: UITextField!
     @IBOutlet var passwordTF: UITextField!
     
-    @IBOutlet var logInButton: UIButton!
-    
     private let user = User.getPerson()
     
     override func shouldPerformSegue(
@@ -35,16 +33,16 @@ final class AuthorizationViewController: UIViewController {
         
         tabBarVC?.viewControllers?.forEach { viewController in
             if let welcomeVC = viewController as? WelcomeViewController {
-                welcomeVC.welcomeUser = user.userName
-                welcomeVC.name = user.person.name
+                welcomeVC.user = user
+
             } else if let navigationVC = viewController as? UINavigationController {
-                let userInformationVC = navigationVC.topViewController
-                as? UserInformationViewController
-                userInformationVC?.name = user.person.name
-                userInformationVC?.surname = user.person.surname
-                userInformationVC?.company = user.person.company
-                userInformationVC?.jobTitle = user.person.jobTitle
-                userInformationVC?.biography = user.person.biography
+                let userInformationVC = navigationVC.topViewController as? UserInformationViewController
+                userInformationVC?.user = user
+//                userInformationVC?.name = user.person.name
+//                userInformationVC?.surname = user.person.surname
+//                userInformationVC?.company = user.person.company
+//                userInformationVC?.jobTitle = user.person.jobTitle
+//                userInformationVC?.biography = user.person.biography
             }
         }
     }

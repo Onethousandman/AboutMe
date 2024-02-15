@@ -12,7 +12,9 @@ struct User {
     
     static func getPerson() -> User {
         User(
-            userName: "User", password: "1", person: Person(
+            userName: "User",
+            password: "1",
+            person: Person(
                 name: "Nikita",
                 surname: "Tyschenko",
                 company: "CIT",

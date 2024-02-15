@@ -14,22 +14,18 @@ final class UserInformationViewController: UIViewController {
     @IBOutlet var companyLabel: UILabel!
     @IBOutlet var jobTitleLabel: UILabel!
     
-    var name: String!
-    var surname: String!
-    var company: String!
-    var jobTitle: String!
-    var biography: String!
+    var user: User!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        nameLabel.text = name
-        surnameLabel.text = surname
-        companyLabel.text = company
-        jobTitleLabel.text = jobTitle
+        nameLabel.text = user.person.name
+        surnameLabel.text = user.person.surname
+        companyLabel.text = user.person.company
+        jobTitleLabel.text = user.person.jobTitle
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let userBiographyVC = segue.destination as? UserBiographyViewController
-        userBiographyVC?.biography = biography
+        userBiographyVC?.user = user
     }
 }

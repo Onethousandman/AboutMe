@@ -11,10 +11,10 @@ final class UserBiographyViewController: UIViewController {
 
     @IBOutlet var biographyLabel: UILabel!
     
-    var biography: String!
+    var user: User!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        biographyLabel.text = biography
+        biographyLabel.text = user.person.biography
     }
 }
