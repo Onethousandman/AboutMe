@@ -14,14 +14,13 @@ final class AuthorizationViewController: UIViewController {
     
     @IBOutlet var logInButton: UIButton!
     
-    private let userName = "User"
-    private let password = "1"
+    private let user = User.getPerson()
     
     override func shouldPerformSegue(
         withIdentifier identifier: String,
         sender: Any?
     ) -> Bool {
-        guard userNameTF.text == userName, passwordTF.text == password else {
+        guard userNameTF.text == user.userName, passwordTF.text == user.password else {
             showAlert(
                 withTitle: "Invalid login or password",
                 andMessage: "Please, enter correct login and password"
@@ -32,21 +31,35 @@ final class AuthorizationViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let welcomeVC = segue.destination as? WelcomeViewController
-        welcomeVC?.welcomeUser = "Welcome, \(userName)!"
+        let tabBarVC = segue.destination as? UITabBarController
+        
+        tabBarVC?.viewControllers?.forEach { viewController in
+            if let welcomeVC = viewController as? WelcomeViewController {
+                welcomeVC.welcomeUser = user.userName
+                welcomeVC.name = user.person.name
+            } else if let navigationVC = viewController as? UINavigationController {
+                let userInformationVC = navigationVC.topViewController
+                as? UserInformationViewController
+                userInformationVC?.name = user.person.name
+                userInformationVC?.surname = user.person.surname
+                userInformationVC?.company = user.person.company
+                userInformationVC?.jobTitle = user.person.jobTitle
+                userInformationVC?.biography = user.person.biography
+            }
+        }
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super .touchesBegan(touches, with: event)
-        self.view.endEditing(true)
+        view.endEditing(true)
     }
     
     @IBAction func showForgottenUserName() {
-        showAlert(withTitle: "Oops", andMessage: "Your name is \(userName)")
+        showAlert(withTitle: "Oops", andMessage: "Your name is \(user.userName)")
     }
     
     @IBAction func showForgottenPassword() {
-        showAlert(withTitle: "Oops", andMessage: "Your password is \(password)")
+        showAlert(withTitle: "Oops", andMessage: "Your password is \(user.password)")
     }
     
     @IBAction func unwind(for seque: UIStoryboardSegue) {
@@ -68,6 +81,5 @@ final class AuthorizationViewController: UIViewController {
         alert.addAction(okAction)
         present(alert, animated: true)
     }
-
 }
 

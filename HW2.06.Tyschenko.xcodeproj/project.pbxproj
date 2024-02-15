@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		569A89502B7D07260095B3A7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569A894F2B7D07260095B3A7 /* User.swift */; };
+		569A89522B7D136C0095B3A7 /* UserInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569A89512B7D136C0095B3A7 /* UserInformationViewController.swift */; };
+		569A89542B7D6A0E0095B3A7 /* UserBiographyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569A89532B7D6A0E0095B3A7 /* UserBiographyViewController.swift */; };
 		569E88162B78D22400BCB207 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569E88152B78D22400BCB207 /* AppDelegate.swift */; };
 		569E88182B78D22400BCB207 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569E88172B78D22400BCB207 /* SceneDelegate.swift */; };
 		569E881A2B78D22400BCB207 /* AuthorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569E88192B78D22400BCB207 /* AuthorizationViewController.swift */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		569A894F2B7D07260095B3A7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		569A89512B7D136C0095B3A7 /* UserInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInformationViewController.swift; sourceTree = "<group>"; };
+		569A89532B7D6A0E0095B3A7 /* UserBiographyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBiographyViewController.swift; sourceTree = "<group>"; };
 		569E88122B78D22400BCB207 /* HW2.06.Tyschenko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW2.06.Tyschenko.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		569E88152B78D22400BCB207 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		569E88172B78D22400BCB207 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +45,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		569A894A2B7D05780095B3A7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				569E88152B78D22400BCB207 /* AppDelegate.swift */,
+				569E88172B78D22400BCB207 /* SceneDelegate.swift */,
+				569E88232B78D22500BCB207 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		569A894B2B7D05CD0095B3A7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				569E88192B78D22400BCB207 /* AuthorizationViewController.swift */,
+				569E88292B79154800BCB207 /* WelcomeViewController.swift */,
+				569A89512B7D136C0095B3A7 /* UserInformationViewController.swift */,
+				569A89532B7D6A0E0095B3A7 /* UserBiographyViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		569A894C2B7D05DE0095B3A7 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				569E881B2B78D22400BCB207 /* Main.storyboard */,
+				569E88202B78D22500BCB207 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		569A894E2B7D06360095B3A7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				569A894F2B7D07260095B3A7 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		569E88092B78D22400BCB207 = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +102,11 @@
 		569E88142B78D22400BCB207 /* HW2.06.Tyschenko */ = {
 			isa = PBXGroup;
 			children = (
-				569E88152B78D22400BCB207 /* AppDelegate.swift */,
-				569E88172B78D22400BCB207 /* SceneDelegate.swift */,
-				569E88192B78D22400BCB207 /* AuthorizationViewController.swift */,
-				569E88292B79154800BCB207 /* WelcomeViewController.swift */,
-				569E881B2B78D22400BCB207 /* Main.storyboard */,
+				569A894B2B7D05CD0095B3A7 /* ViewControllers */,
+				569A894C2B7D05DE0095B3A7 /* Storyboards */,
+				569A894E2B7D06360095B3A7 /* Models */,
+				569A894A2B7D05780095B3A7 /* App */,
 				569E881E2B78D22500BCB207 /* Assets.xcassets */,
-				569E88202B78D22500BCB207 /* LaunchScreen.storyboard */,
-				569E88232B78D22500BCB207 /* Info.plist */,
 			);
 			path = HW2.06.Tyschenko;
 			sourceTree = "<group>";
@@ -144,6 +185,9 @@
 				569E881A2B78D22400BCB207 /* AuthorizationViewController.swift in Sources */,
 				569E882A2B79154800BCB207 /* WelcomeViewController.swift in Sources */,
 				569E88162B78D22400BCB207 /* AppDelegate.swift in Sources */,
+				569A89502B7D07260095B3A7 /* User.swift in Sources */,
+				569A89522B7D136C0095B3A7 /* UserInformationViewController.swift in Sources */,
+				569A89542B7D6A0E0095B3A7 /* UserBiographyViewController.swift in Sources */,
 				569E88182B78D22400BCB207 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,7 +342,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PD3P242DC9;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HW2.06.Tyschenko/Info.plist;
+				INFOPLIST_FILE = HW2.06.Tyschenko/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -330,7 +374,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PD3P242DC9;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HW2.06.Tyschenko/Info.plist;
+				INFOPLIST_FILE = HW2.06.Tyschenko/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
