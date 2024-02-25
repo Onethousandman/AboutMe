@@ -23,7 +23,7 @@
 		569A894F2B7D07260095B3A7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		569A89512B7D136C0095B3A7 /* UserInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInformationViewController.swift; sourceTree = "<group>"; };
 		569A89532B7D6A0E0095B3A7 /* UserBiographyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBiographyViewController.swift; sourceTree = "<group>"; };
-		569E88122B78D22400BCB207 /* HW2.06.Tyschenko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW2.06.Tyschenko.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		569E88122B78D22400BCB207 /* AboutMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AboutMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		569E88152B78D22400BCB207 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		569E88172B78D22400BCB207 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		569E88192B78D22400BCB207 /* AuthorizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewController.swift; sourceTree = "<group>"; };
@@ -86,7 +86,7 @@
 		569E88092B78D22400BCB207 = {
 			isa = PBXGroup;
 			children = (
-				569E88142B78D22400BCB207 /* HW2.06.Tyschenko */,
+				569E88142B78D22400BCB207 /* AboutMe */,
 				569E88132B78D22400BCB207 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,12 +94,12 @@
 		569E88132B78D22400BCB207 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				569E88122B78D22400BCB207 /* HW2.06.Tyschenko.app */,
+				569E88122B78D22400BCB207 /* AboutMe.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		569E88142B78D22400BCB207 /* HW2.06.Tyschenko */ = {
+		569E88142B78D22400BCB207 /* AboutMe */ = {
 			isa = PBXGroup;
 			children = (
 				569A894B2B7D05CD0095B3A7 /* ViewControllers */,
@@ -108,15 +108,15 @@
 				569A894A2B7D05780095B3A7 /* App */,
 				569E881E2B78D22500BCB207 /* Assets.xcassets */,
 			);
-			path = HW2.06.Tyschenko;
+			path = AboutMe;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		569E88112B78D22400BCB207 /* HW2.06.Tyschenko */ = {
+		569E88112B78D22400BCB207 /* AboutMe */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 569E88262B78D22500BCB207 /* Build configuration list for PBXNativeTarget "HW2.06.Tyschenko" */;
+			buildConfigurationList = 569E88262B78D22500BCB207 /* Build configuration list for PBXNativeTarget "AboutMe" */;
 			buildPhases = (
 				569E880E2B78D22400BCB207 /* Sources */,
 				569E880F2B78D22400BCB207 /* Frameworks */,
@@ -126,9 +126,9 @@
 			);
 			dependencies = (
 			);
-			name = HW2.06.Tyschenko;
+			name = AboutMe;
 			productName = HW2.06.Tyschenko;
-			productReference = 569E88122B78D22400BCB207 /* HW2.06.Tyschenko.app */;
+			productReference = 569E88122B78D22400BCB207 /* AboutMe.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -146,7 +146,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 569E880D2B78D22400BCB207 /* Build configuration list for PBXProject "HW2.06.Tyschenko" */;
+			buildConfigurationList = 569E880D2B78D22400BCB207 /* Build configuration list for PBXProject "AboutMe" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -159,7 +159,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				569E88112B78D22400BCB207 /* HW2.06.Tyschenko */,
+				569E88112B78D22400BCB207 /* AboutMe */,
 			);
 		};
 /* End PBXProject section */
@@ -342,7 +342,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PD3P242DC9;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HW2.06.Tyschenko/App/Info.plist;
+				INFOPLIST_FILE = AboutMe/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -374,7 +374,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PD3P242DC9;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HW2.06.Tyschenko/App/Info.plist;
+				INFOPLIST_FILE = AboutMe/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -400,7 +400,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		569E880D2B78D22400BCB207 /* Build configuration list for PBXProject "HW2.06.Tyschenko" */ = {
+		569E880D2B78D22400BCB207 /* Build configuration list for PBXProject "AboutMe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				569E88242B78D22500BCB207 /* Debug */,
@@ -409,7 +409,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		569E88262B78D22500BCB207 /* Build configuration list for PBXNativeTarget "HW2.06.Tyschenko" */ = {
+		569E88262B78D22500BCB207 /* Build configuration list for PBXNativeTarget "AboutMe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				569E88272B78D22500BCB207 /* Debug */,

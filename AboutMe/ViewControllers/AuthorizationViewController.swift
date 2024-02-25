@@ -38,11 +38,6 @@ final class AuthorizationViewController: UIViewController {
             } else if let navigationVC = viewController as? UINavigationController {
                 let userInformationVC = navigationVC.topViewController as? UserInformationViewController
                 userInformationVC?.user = user
-//                userInformationVC?.name = user.person.name
-//                userInformationVC?.surname = user.person.surname
-//                userInformationVC?.company = user.person.company
-//                userInformationVC?.jobTitle = user.person.jobTitle
-//                userInformationVC?.biography = user.person.biography
             }
         }
     }
